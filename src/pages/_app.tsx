@@ -1,11 +1,17 @@
 import AppSheel from "@/components/layouts/AppShell";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
+import { SessionProvider } from "next-auth/react";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppProps) {
   return (
-    <AppSheel>
-      <Component {...pageProps} />
-    </AppSheel>
+    <SessionProvider session={session}>
+      <AppSheel>
+        <Component {...pageProps} />
+      </AppSheel>
+    </SessionProvider>
   );
 }
