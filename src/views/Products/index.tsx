@@ -1,5 +1,5 @@
 import { ProductType } from "@/types/product.type";
-import styles from "@/styles/Product.module.scss";
+import styles from "./Product.module.scss";
 import Link from "next/link";
 
 const ProductView = ({ products }: { products: ProductType[] }) => {

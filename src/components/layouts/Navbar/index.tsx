@@ -1,4 +1,4 @@
-import styles from "@/styles/Navbar.module.scss";
+import styles from "./Navbar.module.scss";
 import { signIn, signOut, useSession } from "next-auth/react";
 const Navbar = () => {
   const { data }: any = useSession();

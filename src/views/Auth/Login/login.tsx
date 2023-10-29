@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "@/styles/Login.module.scss";
+import styles from "./Login.module.scss";
 
-const LoginViews = () => {
+const LoginView = () => {
   const router = useRouter();
 
   const handleLogin = () => {
@@ -22,4 +22,4 @@ const LoginViews = () => {
   );
 };
 
-export default LoginViews;
+export default LoginView;

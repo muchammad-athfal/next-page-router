@@ -1,9 +1,9 @@
-import LoginViews from "@/views/Auth/login";
+import LoginView from "@/views/Auth/Login/login";
 
 const LoginPage = () => {
   return (
     <>
-      <LoginViews />
+      <LoginView />
     </>
   );
 };
